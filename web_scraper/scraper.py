@@ -1,6 +1,3 @@
-"""
-fill this later
-"""
 import requests
 from bs4 import BeautifulSoup
 
@@ -12,7 +9,11 @@ mexico_wiki_url = "https://en.wikipedia.org/wiki/History_of_Mexico"
 
 def get_citations_needed_count(url: str):
     """
-    fill this later
+    a function that takes in a url and returns how many instances of "citiations_needed" in the provided wiki page as intger.
+
+    input: string
+
+    output: intger
     """
     count = 0
     response = requests.get(url)
@@ -28,7 +29,11 @@ def get_citations_needed_count(url: str):
 
 def get_citations_needed_report(url: str):
     """
-    fill this later
+    a function that takes in a url and returns a report of the text blocks that need citation.
+
+    input: string
+
+    output: string
     """
     response = requests.get(url)
     soup = BeautifulSoup(response.text,"html.parser")
