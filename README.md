@@ -1,4 +1,4 @@
-# Web Scraoer
+# Web Scraper
 
 ### Description:
 A small project that utlizies BeautifulSoup4 python library to scrape(grab data) off websites.
